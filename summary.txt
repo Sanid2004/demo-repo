@@ -1,0 +1,33 @@
+1 What is Git ? 
+Git is an open source version control system .
+
+2 What is version control systems ? 
+Version control systems manages the changes made to the document , programs or large websites. It basically keeps the record of
+all those changes.
+
+3 We can easily clone the git hub repository from git hub
+  git clone (HTTP)
+  git clone (SSH) // we need to use SSH key
+
+4 We can view the hidden files inside the demo-repo using ls -al command 
+
+5 One of the hidden files present inside includes .git file which stores all the changes that we make inside the repository at 
+  different times.
+
+6 Let's say we make a file index.html and changed the content of README.md . The .git file will not automatically save the changes.
+  We can check it by using git.status 
+
+7 To store the changes for all file we write : git add .
+    For particular file we write : git add file_name
+
+8 To save that changes on local machine we write : git . commit
+  
+9 If we want to save it on GitHub then we can use SSH keys . 
+    ssh-keygen -t rsa -b 4096 -C "22ucs182@lnmiit.ac.in"
+               type          email
+10 This command will ask you that where to store the keys ? File name ? 
+   In my case : test_key
+
+11 It generates 2 keys : Private (test_key) and public (test_key.pub)
+
+12 Using the private key we will authenticate to github that we are the owner of that account
