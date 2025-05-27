@@ -5,7 +5,7 @@ Git is an open source version control system .
 Version control systems manages the changes made to the document , programs or large websites. It basically keeps the record of
 all those changes.
 
-3 We can easily clone the git hub repository from git hub
+3 We can easily clone the git hub repository from git hub 
   git clone (HTTP)
   git clone (SSH) // we need to use SSH key
 
@@ -20,7 +20,7 @@ all those changes.
 7 To store the changes for all file we write : git add .
     For particular file we write : git add file_name
 
-8 To save that changes on local machine we write : git . commit
+8 To save that changes on local machine we write : git commit -m "update" -m "description"
   
 9 If we want to save it on GitHub then we can use SSH keys . 
     ssh-keygen -t rsa -b 4096 -C "22ucs182@lnmiit.ac.in"
@@ -31,3 +31,18 @@ all those changes.
 11 It generates 2 keys : Private (test_key) and public (test_key.pub)
 
 12 Using the private key we will authenticate to github that we are the owner of that account
+   This stuff you have to do only 1 time :
+   Activate ssh 
+   do something on vim
+   write some more commands
+
+13      git push origin main  : push the code to github
+
+14 Let's consider another case : Where we create the repository on our local machine and want to push it to GitHub ?
+
+15  Here , after following the necessary steps we need to push the code to github . So we create an empty repository in 
+    github and then do SSH.
+
+16 git remote add origin SSH 
+
+17 after that git push origin master
